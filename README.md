@@ -361,11 +361,13 @@ pip install -r requirements.txt
 
 Open `notebook/NHANES_Diabetes_Risk_Prediction.ipynb` in Jupyter Notebook, JupyterLab, or upload it to Google Colab. Some data-acquisition cells require an internet connection. Review the notebook's cells in order because later stages depend on data created earlier.
 
-### 5. Run the API / web application
+### 5. Explore the Web Application
 
-The API entry point is in `deployment/main.py`. Follow the deployment-specific instructions and dependency list in `deployment/requirements.txt`. The saved model used by that deployment is located under `deployment/model/`. The exact command and required environment variables depend on the implementation in `deployment/main.py`.
+Visit the live **Glycemic Health Navigator** web application:
+🔗 [Open Glycemic Health Navigator](https://glycemic-health-navigator.lovable.app/)
 
-> **Note:** The notebook may download source data and create intermediate files. Do not commit private credentials or unnecessary large raw files.
+Explore the application's interface and its diabetes risk prediction features.
+
 
 ## Repository Contents
 
@@ -385,20 +387,18 @@ The API entry point is in `deployment/main.py`. Follow the deployment-specific i
 │       ├── nhanes_dashboard.csv
 │       ├── idf_patients_2024_2050.csv
 │       └── idf_prevalence_2024_2050.csv
-├── deployment/
-│   ├── main.py
-│   ├── requirements.txt
-│   └── model/
-│       └── final_model.joblib
 ├── model/
 │   └── final_model.joblib
 └── images/
     ├── dashboard/
     │   └── dashboard_preview.PNG
-    └── model/
-        ├── confusion_matrix.PNG
-        ├── feature_importance.PNG
-        └── shap_summary.PNG
+    ├── model/
+    │   ├── confusion_matrix.PNG
+    │   ├── feature_importance.PNG
+    │   └── shap_summary.PNG
+    └── webapp/
+        ├── webapp_preview.png
+        └── webapp_demo.gif
 ```
 
 ---
